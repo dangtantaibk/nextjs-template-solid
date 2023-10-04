@@ -2,18 +2,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-const Hero = () => {
+const Introduce = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-
-  const sources = [
-    "/images/shape/shape-01.png",
-    "/images/shape/shape-02.svg",
-    "/images/shape/shape-03.svg",
-  ]
 
   return (
     <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden">
@@ -61,4 +55,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Introduce;

@@ -2,10 +2,11 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Brand } from "@/types/brand";
+
+import { InformationServices } from "@/types/InformationServices";
 
 interface MultipleItemsCarouselProps {
-  sources: Brand[];
+  sources: InformationServices[];
 }
 
 const MultipleItemsCarousel = (props: MultipleItemsCarouselProps) => {

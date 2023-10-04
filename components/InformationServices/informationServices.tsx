@@ -1,6 +1,6 @@
-import { Brand } from "@/types/brand";
+import { InformationServices } from "@/types/InformationServices";
 
-const brandData: Brand[] = [
+const informationServices: InformationServices[] = [
   {
     id: 0.25,
     name: "Quà tết",
@@ -38,4 +38,4 @@ const brandData: Brand[] = [
   },
 ];
 
-export default brandData;
+export default informationServices;
