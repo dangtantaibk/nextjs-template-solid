@@ -8,26 +8,20 @@ const menuData: Menu[] = [
     path: "/"
   },
   {
-    id: 2,
-    title: "Features",
-    newTab: false,
-    path: "/#features"
-  },
-  {
     id: 2.1,
-    title: "Blog",
+    title: "Tin tức & Blog",
     newTab: false,
     path: "/blog"
   },
   {
     id: 2.3,
-    title: "Docs",
+    title: "Tài liệu",
     newTab: false,
     path: "/docs"
   },
   {
     id: 3,
-    title: "Pages",
+    title: "Thông tin khác",
     newTab: false,
     submenu: [
       {
@@ -71,7 +65,7 @@ const menuData: Menu[] = [
 
   {
     id: 4,
-    title: "Support",
+    title: "Liên hệ",
     newTab: false,
     path: "/support"
   },
