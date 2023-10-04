@@ -8,6 +8,12 @@ const menuData: Menu[] = [
     path: "/"
   },
   {
+    id: 2,
+    title: "Tính năng",
+    newTab: false,
+    path: "/#features"
+  },
+  {
     id: 2.1,
     title: "Tin tức & Blog",
     newTab: false,
