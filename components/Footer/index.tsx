@@ -55,12 +55,12 @@ const Footer = () => {
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
                   contact
                 </p>
-                <a
+                {/* <a
                   href="#"
                   className="text-black dark:text-white font-medium text-itemtitle"
                 >
                   cskh.banhtrungthu24h@gmail.com
-                </a>
+                </a> */}
               </motion.div>
 
               <div className="w-full lg:w-2/3 xl:w-7/12 flex flex-col md:flex-row md:justify-between gap-8 md:gap-0">
@@ -205,7 +205,7 @@ const Footer = () => {
                     Subscribe to receive future updates
                   </p>
 
-                  <form action="#">
+                  {/* <form action="#">
                     <div className="relative">
                       <input
                         type="text"
@@ -236,7 +236,7 @@ const Footer = () => {
                         </svg>
                       </button>
                     </div>
-                  </form>
+                  </form> */}
                 </motion.div>
               </div>
             </div>
