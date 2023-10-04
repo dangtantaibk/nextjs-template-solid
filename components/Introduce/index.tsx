@@ -38,7 +38,7 @@ const Introduce = () => {
               </form>
             </div>
           </div>
-          <div className="animate_right md:w-1/2 hidden lg:block">
+          <div className="animate_right md:w-1/2 hidden md:block">
             <div className="relative 2xl:-mr-7.5">
               <div className="relative aspect-[700/444] w-full">
                 <Image

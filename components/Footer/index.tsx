@@ -85,7 +85,7 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                  Quick Links
+                  Liên hệ nhanh
                 </h4>
 
                 <ul>
@@ -94,7 +94,7 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Home
+                      Trang chủ
                     </a>
                   </li>
                   <li>
@@ -102,7 +102,7 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Product
+                      Sản phẩm
                     </a>
                   </li>
                   <li>
@@ -110,15 +110,7 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Careers
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="inline-block hover:text-primary mb-3"
-                    >
-                      Pricing
+                      Tin tức & Blog
                     </a>
                   </li>
                 </ul>
@@ -143,7 +135,7 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                  Support
+                  Trợ giúp
                 </h4>
 
                 <ul>
@@ -152,15 +144,7 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Company
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="inline-block hover:text-primary mb-3"
-                    >
-                      Press media
+                      Công ty
                     </a>
                   </li>
                   <li>
@@ -176,11 +160,11 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Contact Us
+                      Liên hệ với
                     </a>
                   </li>
                 </ul>
-              </motion.div> 
+              </motion.div>
 
               <motion.div
                 variants={{
@@ -201,10 +185,10 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                  Newsletter
+                  Bảng tin
                 </h4>
                 <p className="mb-4 w-[90%]">
-                  Subscribe to receive future updates
+                  Đăng ký để nhận thông tin cập nhật mới nhất
                 </p>
 
                 {/* <form action="#">
@@ -265,7 +249,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="animate_top"
           >
-            <p>&copy; {moment().format("YYYY")} 24h Store</p>
+            <p>&copy; {moment().format("YYYY")}Store24h</p>
           </motion.div>
         </div>
         {/* <!-- Footer Bottom --> */}
