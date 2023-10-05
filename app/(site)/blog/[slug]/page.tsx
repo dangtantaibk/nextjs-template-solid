@@ -35,6 +35,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
   renderer.use(bookmarkPlugin());
 
   const html = await renderer.render(...blocks);
+
+  console.log(html)
   return (
     <>
       <title>{`Blog Details - Solid`}</title>
