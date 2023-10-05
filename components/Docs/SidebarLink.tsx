@@ -13,7 +13,7 @@ const SidebarLink = () => {
           Introduction
         </Link>
         <Link
-          href={`/docs`}
+          href={`/bootstrap-template-guide`}
           className={`text-base py-2 px-3 rounded-sm flex w-full text-black dark:text-white `}
         >
           Bootstrap Template Guide
