@@ -1,17 +1,12 @@
 import { Metadata } from "next";
-import Hero from "@/components/Hero";
-import Brands from "@/components/Brands";
-import Feature from "@/components/Features";
-import About from "@/components/About";
-import FeaturesTab from "@/components/FeaturesTab";
-import FunFact from "@/components/FunFact";
-import Integration from "@/components/Integration";
-import CTA from "@/components/CTA";
-import FAQ from "@/components/FAQ";
-import Pricing from "@/components/Pricing";
+
+import Introduce from "@/components/Introduce";
+import InformationServices from "@/components/InformationServices";
+import SaleProduct from "@/components/SaleProduct";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
+import FeaturesTab from "@/components/FeaturesTab";
 
 export const metadata: Metadata = {
   title: "Hộp quà tặng tết 24h",
@@ -19,21 +14,14 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <Brands />
-      <Feature />
-      <About />
-      <FeaturesTab />
-      <FunFact />
-      {/* <Integration /> */}
-      <CTA />
-      <FAQ />
-      <Testimonial />
-      {/* <Pricing /> */}
+      <Introduce />
+      <InformationServices />
+      <SaleProduct />
+      <FeaturesTab/>
+      <Testimonial/>
       <Contact />
       <Blog />
     </main>

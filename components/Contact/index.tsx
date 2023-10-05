@@ -57,7 +57,7 @@ const Contact = () => {
               className="animate_top w-full md:w-3/5 lg:w-3/4 shadow-solid-8 rounded-lg bg-white dark:bg-black dark:border dark:border-strokedark p-7.5 xl:p-15"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-15">
-                Send a message
+                Gửi thông tin
               </h2>
 
               <form
@@ -67,13 +67,13 @@ const Contact = () => {
                 <div className="flex flex-col lg:flex-row lg:justify-between gap-7.5 lg:gap-14 mb-7.5">
                   <input
                     type="text"
-                    placeholder="Full name"
+                    placeholder="Họ và tên"
                     className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
                   />
 
                   <input
                     type="email"
-                    placeholder="Email address"
+                    placeholder="Email"
                     className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
                   />
                 </div>
@@ -81,20 +81,20 @@ const Contact = () => {
                 <div className="flex flex-col lg:flex-row lg:justify-between gap-7.5 lg:gap-14 mb-12.5">
                   <input
                     type="text"
-                    placeholder="Subject"
+                    placeholder="Thông tin"
                     className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
                   />
 
                   <input
                     type="text"
-                    placeholder="Phone number"
+                    placeholder="Số điện thoại"
                     className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
                   />
                 </div>
 
                 <div className="flex mb-11.5">
                   <textarea
-                    placeholder="Message"
+                    placeholder="Nội dung thông tin"
                     rows={4}
                     className="w-full bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white"
                   ></textarea>
@@ -112,13 +112,13 @@ const Contact = () => {
                       htmlFor="default-checkbox"
                       className="max-w-[425px] flex cursor-pointer select-none pl-5 text-sm"
                     >
-                      By clicking Checkbox, you agree to use our “Form” terms
-                      And consent cookie usage in browser.
+                      Bằng cách nhấp vào Hộp kiểm, bạn đồng ý sử dụng các điều khoản về “Biểu mẫu” của chúng tôi
+                      Và đồng ý sử dụng cookie trong trình duyệt.
                     </label>
                   </div>
 
                   <button aria-label="send message" className="inline-flex items-center gap-2.5 bg-black hover:bg-blackho ease-in-out duration-300 dark:bg-btndark font-medium text-white rounded-full px-6 py-3">
-                    Send Message
+                    Gửi thông tin
                     <svg
                       className="fill-white"
                       width="14"
@@ -156,29 +156,29 @@ const Contact = () => {
               className="animate_top w-full md:w-2/5 lg:w-[26%] md:p-7.5 xl:pt-15"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-12.5">
-                Find us
+                Liên hệ
               </h2>
 
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Our Loaction
+                  Địa chỉ
                 </h4>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>156 Dương Bá Trạc, Quận 8, Thành phố Hồ Chí Minh.</p>
               </div>
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Email Address
+                  Địa chỉ email
                 </h4>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="#">cskh.banhtrungthu24h@gmail.com</a>
                 </p>
               </div>
               <div>
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Phone Number
+                  Số điện thoại
                 </h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <a href="#">0934923478(Thảo) - 0901460922(Nhiên)</a>
                 </p>
               </div>
             </motion.div>
