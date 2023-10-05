@@ -31,8 +31,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
   });
 //   hljs.highlightAll();
 
-  renderer.use(hljsPlugin());
-  renderer.use(bookmarkPlugin());
+  // renderer.use(hljsPlugin());
+  // renderer.use(bookmarkPlugin());
 
   const html = await renderer.render(...blocks);
   return (
