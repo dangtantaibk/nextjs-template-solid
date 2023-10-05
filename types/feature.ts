@@ -9,5 +9,6 @@ export type Products = {
   id: number;
   image: string;
   nameProduct: string;
-  price: string | number;
+  subTitle: string;
+  price?: string | number;
 };

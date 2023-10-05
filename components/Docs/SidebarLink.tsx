@@ -1,37 +1,41 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
+
+const menus = [
+  {
+    url: '/docs/bootstrap',
+    title: 'Introduction'
+  },
+  {
+    url: '/docs/bootstrap-template-guide',
+    title: 'Bootstrap Template Guide'
+  },
+  {
+    url: '/docs/style-guide',
+    title: 'Style Guide'
+  },
+  {
+    url: '/docs/tailwind',
+    title: 'Using Tailwind Components'
+  }
+]
 
 const SidebarLink = () => {
+  const path = usePathname();
 
   return (
-    <>
-      <li className="block">
+    <li className="block">
+      {menus?.map((menu, index) => (
         <Link
-          href={`/docs`}
-          className={`text-base py-2 px-3 rounded-sm flex w-full bg-stroke text-black dark:text-white dark:bg-blackho`}
+          key={index}
+          href={menu.url}
+          className={`text-base py-2 px-3 rounded-sm flex w-full text-black dark:text-white ${path === menu.url && 'bg-stroke dark:bg-blackho'}`}
         >
-          Introduction
+          {menu.title}
         </Link>
-        <Link
-          href={`/docs`}
-          className={`text-base py-2 px-3 rounded-sm flex w-full text-black dark:text-white `}
-        >
-          Bootstrap Template Guide
-        </Link>
-        <Link
-          href={`/docs`}
-          className={`text-base py-2 px-3 rounded-sm flex w-full text-black dark:text-white `}
-        >
-          Style Guide
-        </Link>
-        <Link
-          href={`/docs`}
-          className={`text-base py-2 px-3 rounded-sm flex w-full text-black dark:text-white `}
-        >
-          Using Tailwind Components
-        </Link>
-      </li>
-    </>
+      ))}
+    </li>
   );
 };
 
