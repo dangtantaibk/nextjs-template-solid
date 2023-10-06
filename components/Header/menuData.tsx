@@ -3,31 +3,36 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Trang chủ",
+    title: "Home",
+    // title: "Trang chủ",
     newTab: false,
     path: "/"
   },
   {
     id: 2,
-    title: "Tính năng",
+    title: "Features",
+    // title: "Tính năng",
     newTab: false,
     path: "/#features"
   },
   {
     id: 2.1,
-    title: "Tin tức & Blog",
+    // title: "Tin tức & Blog",
+    title: "News & Blog",
     newTab: false,
     path: "/blog"
   },
   {
     id: 2.3,
-    title: "Tài liệu",
+    // title: "Tài liệu",
+    title: "Documents",
     newTab: false,
     path: "/docs"
   },
   {
     id: 3,
-    title: "Thông tin khác",
+    // title: "Thông tin khác",
+    title: "Support",
     newTab: false,
     submenu: [
       {
@@ -71,7 +76,7 @@ const menuData: Menu[] = [
 
   {
     id: 4,
-    title: "Liên hệ",
+    title: "Contact",
     newTab: false,
     path: "/support"
   },

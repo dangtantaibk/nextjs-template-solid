@@ -12,9 +12,9 @@ const BlogPage = async () => {
   return (
     <section className="py-20 lg:py-25 xl:py-30">
       <CardProduct
-        title="TIN TỨC & BLOGS"
-        subtitle="Tin tức & Blog mới nhất "
-        description="Cập nhập các tin tức và thông tin"
+        title="NEWS & BLOGS"
+        subtitle="News & Blogs"
+        description="Update news and information"
         products={products}
       />
     </section>

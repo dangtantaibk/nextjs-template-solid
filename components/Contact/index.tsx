@@ -156,29 +156,21 @@ const Contact = () => {
               className="animate_top w-full md:w-2/5 lg:w-[26%] md:p-7.5 xl:pt-15"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-12.5">
-                Liên hệ
+                Contact Us
               </h2>
 
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Địa chỉ
+                  Address
                 </h4>
-                <p>156 Dương Bá Trạc, Quận 8, Thành phố Hồ Chí Minh.</p>
+                <p>138 Hai Ba Trung, DaKao, Quan 1, Thành phố Hồ Chí Minh.</p>
               </div>
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Địa chỉ email
+                  Email
                 </h4>
                 <p>
-                  <a href="#">cskh.banhtrungthu24h@gmail.com</a>
-                </p>
-              </div>
-              <div>
-                <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Số điện thoại
-                </h4>
-                <p>
-                  <a href="#">0934923478(Thảo) - 0901460922(Nhiên)</a>
+                  <a href="#">cskh.kido@gmail.com</a>
                 </p>
               </div>
             </motion.div>
