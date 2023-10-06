@@ -1,10 +1,12 @@
-const withMDX = require('@next/mdx')()
+const withMDX = require('@next/mdx')();
+const i18n = require('./i18n');
 
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  i18n,
   images: {
     domains: ["localhost"],
     remotePatterns: [

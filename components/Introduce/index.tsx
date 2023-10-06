@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { useTranslation } from 'react-i18next';
 
 const Introduce = () => {
   const [email, setEmail] = useState("");
+  const { t } = useTranslation('translation');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,6 +18,7 @@ const Introduce = () => {
           <div className=" md:w-1/2">
             <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5">
               TRAO GỬI YÊU THƯƠNG
+              <p>{t('welcome')}</p>
             </h1>
             <p className="text-justify">Tết là văn hoá truyền thống của người Việt, là dịp để gắn kết tình thân gia đình, tết còn là cơ hội để các doanh nghiệp quan tâm, thể hiện tình cảm của mình với đối tác, với nhân viên của mình bằng những món quà tết, giỏ quà tết , hộp quà tết ý nghĩa. Vì đối tác, nhân viên là tài sản vô giá của doanh nghiệp cần gắn kết xây dựng.</p>
             <div className="mt-10">
