@@ -18,6 +18,10 @@ const nextConfig = {
     ],
   },
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  i18n: {
+    defaultLocale: 'vn',
+    locales: ['vn', 'UA', 'PT'],
+  },
 };
 
 module.exports = nextConfig;
