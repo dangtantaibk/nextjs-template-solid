@@ -34,7 +34,7 @@ const Footer = () => {
                   width={50}
                   height={50}
                   style={{ borderRadius: 10 }}
-                  src="/images/logo/logo.jpeg"
+                  src="/images/logo/logo1.jpeg"
                   alt="Logo"
                 // className="dark:hidden"
                 />

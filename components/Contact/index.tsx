@@ -57,7 +57,7 @@ const Contact = () => {
               className="animate_top w-full md:w-3/5 lg:w-3/4 shadow-solid-8 rounded-lg bg-white dark:bg-black dark:border dark:border-strokedark p-7.5 xl:p-15"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-15">
-                Gửi thông tin
+                Information
               </h2>
 
               <form
@@ -67,7 +67,7 @@ const Contact = () => {
                 <div className="flex flex-col lg:flex-row lg:justify-between gap-7.5 lg:gap-14 mb-7.5">
                   <input
                     type="text"
-                    placeholder="Họ và tên"
+                    placeholder="Name"
                     className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
                   />
 
@@ -81,20 +81,20 @@ const Contact = () => {
                 <div className="flex flex-col lg:flex-row lg:justify-between gap-7.5 lg:gap-14 mb-12.5">
                   <input
                     type="text"
-                    placeholder="Thông tin"
+                    placeholder="Info"
                     className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
                   />
 
                   <input
                     type="text"
-                    placeholder="Số điện thoại"
+                    placeholder="Phone"
                     className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
                   />
                 </div>
 
                 <div className="flex mb-11.5">
                   <textarea
-                    placeholder="Nội dung thông tin"
+                    placeholder="Content"
                     rows={4}
                     className="w-full bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white"
                   ></textarea>
@@ -112,13 +112,12 @@ const Contact = () => {
                       htmlFor="default-checkbox"
                       className="max-w-[425px] flex cursor-pointer select-none pl-5 text-sm"
                     >
-                      Bằng cách nhấp vào Hộp kiểm, bạn đồng ý sử dụng các điều khoản về “Biểu mẫu” của chúng tôi
-                      Và đồng ý sử dụng cookie trong trình duyệt.
+                      By clicking the Checkbox, you agree to use our “Forms” terms And agree to the use of cookies in the browser.
                     </label>
                   </div>
 
                   <button aria-label="send message" className="inline-flex items-center gap-2.5 bg-black hover:bg-blackho ease-in-out duration-300 dark:bg-btndark font-medium text-white rounded-full px-6 py-3">
-                    Gửi thông tin
+                    Send info
                     <svg
                       className="fill-white"
                       width="14"
