@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, memo, useMemo } from "react";
+import { useTranslation } from 'react-i18next';
 
 interface MenuLanguageProps {
   titleLanguage: string;
@@ -14,14 +15,18 @@ const Language = (props: LanguageProps) => {
   const { menuLanguage } = props;
 
   const [dropdownToggler, setDropdownToggler] = useState(false);
-  const [languageActive, setLanguageActive] = useState(localStorage.getItem('language'));
+
+  const { i18n } = useTranslation();
+  const [languageActive, setLanguageActive] = useState("vn");
 
   const onSelectLanguage = (value) => {
     setLanguageActive(value);
-    localStorage.setItem('language', value);
+    i18n.changeLanguage(value);
+    console.log(i18n.language)
+    // localStorage.setItem('language', value);
   }
 
-  const title = useMemo(()=>{
+  const title = useMemo(() => {
     return menuLanguage.find((item) => item.keyLanguage === languageActive)?.titleLanguage
   }, [languageActive])
 

@@ -1,8 +1,7 @@
+"use client";
 import React from "react";
 import HeaderCard from "./HeaderCard";
 import ProductItem from "./ProductItem";
-import BlogData from "./blogData";
-
 interface CardProductProps {
   title: string;
   subtitle: string;

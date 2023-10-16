@@ -1,8 +1,9 @@
+import products from "components/Blog/products";
+import CardProduct from 'components/CardProduct';
 
-import products from "../../../components/Blog/products";
-import CardProduct from '../../../components/CardProduct';
 import { Metadata } from "next";
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'app/i18n';
+
 
 export const metadata: Metadata = {
   title: "Blog Page - Solid SaaS Boilerplate",
@@ -10,12 +11,13 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-const BlogPage = async () => {
-  const { t } = await useTranslation('en')
+const BlogPage = () => {
+  const { i18next, t } = useTranslation();
+  console.log("useTranslation=====>", i18next.t('titleBlog'))
   return (
     <section className="py-20 lg:py-25 xl:py-30">
       <CardProduct
-        title={t('titleBlog')}
+        title={i18next.t('titleBlog')}
         subtitle="Tin tức & Blog mới nhất "
         description="Cập nhập các tin tức và thông tin"
         products={products}
