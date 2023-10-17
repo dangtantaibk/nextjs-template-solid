@@ -7,6 +7,7 @@ import Link from "next/link";
 import ThemeToggler from "./components/ThemeToggler";
 
 import { usePathname } from "next/navigation";
+import { useTranslation } from 'react-i18next';
 
 interface MenuProps {
   navigationOpen: Boolean;
@@ -27,6 +28,7 @@ const Menu = (props: MenuProps) => {
   const { navigationOpen } = props;
   const pathUrl = usePathname();
 
+  const { t } = useTranslation();
   return (
     <div
       className={`w-full lg:w-full h-0 lg:h-auto invisible lg:visible lg:flex items-center justify-between ${navigationOpen &&
@@ -38,7 +40,7 @@ const Menu = (props: MenuProps) => {
           {menuData.map((menuItem, key) => (
             <li key={key} className={menuItem.submenu && "group relative"}>
               {!!menuItem.submenu ? (
-                <SubMenu title={menuItem.title} menu={menuItem.submenu || []} />
+                <SubMenu title={t(`${menuItem.title}`)} menu={menuItem.submenu || []} />
               ) : (
                 <Link
                   href={`${menuItem.path}`}
@@ -48,7 +50,7 @@ const Menu = (props: MenuProps) => {
                       : "hover:text-primary"
                   }
                 >
-                  {menuItem.title}
+                  {t(`${menuItem.title}`)}
                 </Link>
               )}
             </li>

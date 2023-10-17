@@ -1,1 +1,21 @@
-{ "titleBlog": "TIN TỨC & BLOGS",  "welcome": "Xin chào VN" }
+{
+  "home": "Trang chủ",
+  "feature": "Tính năng",
+  "news": "Tin tức & Blog",
+  "docs": "Tài liệu",
+  "other": "Thông tin khác",
+  "contact": "Liên hệ",
+  "titleBlog": "TIN TỨC & BLOGS",
+  "welcome": "Xin chào VN",
+  "love": "TRAO GỬI YÊU THƯƠNG",
+  "tetHoliday": "Tết là văn hoá truyền thống của người Việt, là dịp để gắn kết tình thân gia đình, tết còn là cơ hội để các doanh nghiệp quan tâm, thể hiện tình cảm của mình với đối tác, với nhân viên của mình bằng những món quà tết, giỏ quà tết , hộp quà tết ý nghĩa. Vì đối tác, nhân viên là tài sản vô giá của doanh nghiệp cần gắn kết xây dựng.",
+  "send": "Gửi",
+  "email_address": "Địa chỉ email của bạn",
+  "tet_gift_basket": "Giỏ quà Tết",
+  "health_gift": "Quà tặng sức khoẻ",
+  "nests": "Yến sào",
+  "tet_gift_box": "Hộp quà Tết",
+  "cordyceps": "Đông trùng hạ thảo",
+  "all_product": "Tất cả sản phẩm",
+  "tet_gift": "Quà Tết"
+}
