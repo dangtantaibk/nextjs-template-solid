@@ -54,14 +54,16 @@ const ProductItem = (props: any) => {
       viewport={{ once: true }}
       className="animate_top bg-white dark:bg-blacksection rounded-lg shadow-solid-8 p-4 pb-9"
     >
-      <Link href={`/blog/`} className="block relative aspect-[368/239]">
-        <Image src={product.image} alt={product.nameProduct} fill style={{ borderRadius: 10 }} />
+      <Link href={`/blog${product?.url}` || '/blog'}>
+        <div className="block relative aspect-[368/239]">
+          <Image src={product.image || '/images/blog/blog-01.png'} alt={product.nameProduct} fill style={{ borderRadius: 10 }} />
+        </div>
+        <div className="px-4">
+          <Title title={product?.title} />
+          {product.price && <p className="mt-1 text-lg font-medium text-gray-900">Giá: {money(product.price)} đ</p>}
+          <SubTitle subTitle={product.shortDesc} />
+        </div>
       </Link>
-      <div className="px-4">
-        <Title title={product.nameProduct} />
-        {product.price && <p className="mt-1 text-lg font-medium text-gray-900">Giá: {money(product.price)} đ</p>}
-        <SubTitle subTitle={product.subTitle} />
-      </div>
     </motion.div>
   );
 };

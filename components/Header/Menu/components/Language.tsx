@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, memo, useMemo } from "react";
 import { useTranslation } from 'react-i18next';
+// import { useRouter, usePathname } from 'next/navigation';
 
 interface MenuLanguageProps {
   titleLanguage: string;
@@ -13,6 +14,8 @@ interface LanguageProps {
 
 const Language = (props: LanguageProps) => {
   const { menuLanguage } = props;
+  // const router = useRouter();
+  // const pathname = usePathname();
 
   const [dropdownToggler, setDropdownToggler] = useState(false);
 
@@ -22,8 +25,7 @@ const Language = (props: LanguageProps) => {
   const onSelectLanguage = (value) => {
     setLanguageActive(value);
     i18n.changeLanguage(value);
-    console.log(i18n.language)
-    // localStorage.setItem('language', value);
+    // router.push(`${pathname}?languge=${i18n.language}`);
   }
 
   const title = useMemo(() => {
