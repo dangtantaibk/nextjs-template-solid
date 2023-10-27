@@ -6,8 +6,30 @@ interface FormBlogProps {
   children: React.ReactNode;
 }
 
-const FormBlog = (props: FormBlogProps) => {
+interface Category {
+  id: number;
+  name: string;
+}
+
+interface CategoryBlogsProps {
+  content: Category[];
+  last: boolean;
+  totalPages: number;
+  totalElements: number;
+  sort: string | null;
+  numberOfElements: number;
+  first: boolean;
+  size: number;
+  number: number;
+}
+
+const DOMAIN = 'https://banhtrungthu24h.com/api/v1/';
+
+const FormBlog = async (props: FormBlogProps) => {
   const { children } = props;
+  const categoryBlogs: CategoryBlogsProps = await fetch(`${DOMAIN}categoryBlogs/webs`).then((res) => res.json());
+  const categories: Category[] = categoryBlogs.content;
+
   return (
     <React.Fragment>
       <title>{`Blog Details - Solid`}</title>
@@ -51,21 +73,11 @@ const FormBlog = (props: FormBlogProps) => {
                   Categories
                 </h4>
                 <ul>
-                  <li className="last:mb-0 mb-3 transition-all duration-300 hover:text-primary">
-                    <a href="#">Blog</a>
-                  </li>
-                  <li className="last:mb-0 mb-3 transition-all duration-300 hover:text-primary">
-                    <a href="#">Events</a>
-                  </li>
-                  <li className="last:mb-0 mb-3 transition-all duration-300 hover:text-primary">
-                    <a href="#">Grids</a>
-                  </li>
-                  <li className="last:mb-0 mb-3 transition-all duration-300 hover:text-primary">
-                    <a href="#">News</a>
-                  </li>
-                  <li className="last:mb-0 mb-3 transition-all duration-300 hover:text-primary">
-                    <a href="#">Rounded</a>
-                  </li>
+                  {categories.map((category: Category, index) => (
+                    <li className="last:mb-0 mb-3 transition-all duration-300 hover:text-primary" key={index}>
+                      <a href="#">{category.name}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <RelatedPost />

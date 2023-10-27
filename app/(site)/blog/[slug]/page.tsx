@@ -2,6 +2,7 @@ import SharePost from "@/components/Blog/SharePost";
 import '@notion-render/client/sass/theme.scss';
 import moment from "moment";
 import FormBlog from '@/components/FormBlog';
+import EditorNovel from "@/components/EditorNovel"
 
 import { useTranslationServer } from 'app/i18n';
 import { Metadata } from "next";
@@ -23,11 +24,19 @@ interface BlogDetail {
   status: number;
   createdAt: number;
   updatedAt: number;
+  authorUser: string | null;
+  categoryBlogId: number;
+  categoryBlog: {
+    id: number;
+    name: string;
+  }
 }
 
+const DOMAIN = 'https://banhtrungthu24h.com/api/v1/';
+
 export default async function Page({ params }: { params: { slug: string } }) {
-  const blogDetail: BlogDetail = await fetch(`https://banhtrungthu24h.com/api/v1/blogs/url/${params.slug}`).then((res) => res.json());
-  const { title, author, content, publishedDate } = blogDetail;
+  const blogDetail: BlogDetail = await fetch(`${DOMAIN}blogs/url/${params.slug}`).then((res) => res.json());
+  const { title, authorUser, content, publishedDate, contentAdmin, categoryBlog } = blogDetail;
   const { t } = await useTranslationServer('en');
 
   return (
@@ -39,7 +48,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <ul className="flex flex-wrap gap-5 2xl:gap-7.5 mb-9">
           <li>
             <span className="text-black dark:text-white">{t('author')}: </span>{" "}
-            Author_{author}
+           {authorUser || '-'}
           </li>
           <li>
             <span className="text-black dark:text-white">
@@ -48,13 +57,12 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </li>
           <li>
             <span className="text-black dark:text-white">
-              Category:
+              Category:{' '}
             </span>
-            Events
+            { categoryBlog?.name || '-'}
           </li>
         </ul>
-        <div className="text-black dark:text-white border-b border-stroke mb-5">Nội dung: </div>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <EditorNovel contentAdmin={contentAdmin} />
         <SharePost />
       </div>
     </FormBlog>

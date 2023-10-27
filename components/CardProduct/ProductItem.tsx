@@ -17,7 +17,7 @@ interface SubTitleProps {
 const Title = (props: TitleProps) => {
   const { title } = props;
   return (
-    <h4 className="font-medium text-lg xl:text-itemtitle2 text-black hover:text-primary dark:hover:text-primary dark:text-white mt-7.5 mb-3.5">
+    <h4 className="font-medium text-md xl:text-itemtitle2 text-black hover:text-primary dark:hover:text-primary dark:text-white mt-7.5 mb-3.5 uppercase">
       <Link href={`/blog/blog-details`}>
         {`${title.slice(0, 40)}...`}
       </Link>
@@ -56,7 +56,7 @@ const ProductItem = (props: any) => {
     >
       <Link href={`/blog${product?.url}` || '/blog'}>
         <div className="block relative aspect-[368/239]">
-          <Image src={product.image || '/images/blog/blog-01.png'} alt={product.nameProduct} fill style={{ borderRadius: 10 }} />
+          <img src={product.backgroundUrl || '/images/blog/blog-01.png'} alt={product.nameProduct} style={{ borderRadius: 10 }} className="aspect-[368/239] object-cover"/>
         </div>
         <div className="px-4">
           <Title title={product?.title} />
