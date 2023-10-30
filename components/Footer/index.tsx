@@ -34,7 +34,7 @@ const Footer = () => {
                   width={50}
                   height={50}
                   style={{ borderRadius: 10 }}
-                  src="/images/logo/logo.jpeg"
+                  src="/images/logo/logo1.jpeg"
                   alt="Logo"
                 // className="dark:hidden"
                 />
@@ -42,24 +42,23 @@ const Footer = () => {
                     width={50}
                     height={50}
                     style={{borderRadius: 10}}
-                    src="/images/logo/logo.jpeg"
+                    src="/images/logo/logo1.jpeg"
                     alt="Logo"
                     className="hidden dark:block"
                   /> */}
-                <h1 className="ml-3 font-medium text-black dark:text-white text-itemtitle2">Cửa hàng 24h</h1>
+                <h1 className="ml-3 font-medium text-black dark:text-white text-itemtitle2">Kido Shop</h1>
               </a>
 
               <div className="mt-4">
-                <p className="text-black dark:text-white mt-2 font-semibold">Cửa hàng 24h, ngon trên từng vị bánh - Giao hàng nhanh 2h.</p>
-                <p className="ml-2">- Bánh trung thu 24h.</p>
-                <p className="ml-2">- Quà tết 24h.</p>
-                <p className="ml-2">- Yến sào cao cấp 24h.</p>
+                <p className="text-black dark:text-white mt-2 font-semibold">Kido Shop</p>
+                <p className="ml-2">- Bánh trung thu Kido.</p>
+                <p className="ml-2">- Bánh bao Thọ Phát</p>
+                <p className="ml-2">- Dầu ăn Tường An</p>
               </div>
 
               <div className="mt-4">
-                <p className="text-black dark:text-white mt-2 font-semibold">Liên hệ:</p>
-                <p className="ml-2">Email: cskh.banhtrungthu24h@gmail.com</p>
-                <p className="ml-2">0934923478(Thảo) - 0901460922(Nhiên)</p>
+                <p className="text-black dark:text-white mt-2 font-semibold">Contact us</p>
+                <p className="ml-2">Email: cskh.kido@gmail.com</p>
               </div>
 
 
@@ -85,7 +84,8 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                  Liên hệ nhanh
+                  {/* Liên hệ nhanh */}
+                  Contact
                 </h4>
 
                 <ul>
@@ -94,7 +94,8 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Trang chủ
+                      {/* Trang chủ */}
+                      Home
                     </a>
                   </li>
                   <li>
@@ -102,7 +103,8 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Sản phẩm
+                      {/* Sản phẩm */}
+                      Products
                     </a>
                   </li>
                   <li>
@@ -110,7 +112,8 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Tin tức & Blog
+                      {/* Tin tức & Blog */}
+                      News & Blog
                     </a>
                   </li>
                 </ul>
@@ -135,7 +138,8 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                  Trợ giúp
+                  {/* Trợ giúp */}
+                  Support
                 </h4>
 
                 <ul>
@@ -144,7 +148,8 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Công ty
+                      {/* Công ty */}
+                      Company
                     </a>
                   </li>
                   <li>
@@ -160,7 +165,8 @@ const Footer = () => {
                       href="#"
                       className="inline-block hover:text-primary mb-3"
                     >
-                      Liên hệ với
+                      {/* Liên hệ với */}
+                      Contact us
                     </a>
                   </li>
                 </ul>
@@ -185,10 +191,12 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                  Bảng tin
+                  {/* Bảng tin */}
+                  News
                 </h4>
                 <p className="mb-4 w-[90%]">
-                  Đăng ký để nhận thông tin cập nhật mới nhất
+                  {/* Đăng ký để nhận thông tin cập nhật mới nhất */}
+                  Sign up to receive the latest updates
                 </p>
 
                 {/* <form action="#">
@@ -249,7 +257,10 @@ const Footer = () => {
             viewport={{ once: true }}
             className="animate_top"
           >
-            <p>&copy; {moment().format("YYYY")}Store24h</p>
+            <p>&copy; {moment().format("YYYY")}
+              {/* Store24h */}
+              {' '} SHOP_KIDO
+            </p>
           </motion.div>
         </div>
         {/* <!-- Footer Bottom --> */}

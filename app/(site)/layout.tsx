@@ -7,6 +7,7 @@ import ToasterContext from "../context/ToastContext";
 import "../globals.css";
 
 import { ThemeProvider } from "next-themes";
+import 'app/i18n/i18n';
 
 export default function RootLayout({
   children,

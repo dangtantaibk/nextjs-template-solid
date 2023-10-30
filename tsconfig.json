@@ -35,6 +35,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "components",
+    "app/i18n",
     ".next/types/**/*.ts"
   ],
   "exclude": [

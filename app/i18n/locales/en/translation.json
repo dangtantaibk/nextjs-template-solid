@@ -1,1 +1,22 @@
-{ "titleBlog": "NEW & BLOGS" }
+{
+  "home": "Home",
+  "feature": "Feature",
+  "news": "News & Blog",
+  "docs": "Documents",
+  "other": "Other information",
+  "contact": "Contact",
+  "titleBlog": "NEW & BLOGS",
+  "welcome": "Xin chào ENG",
+  "love": "GIVE LOVE",
+  "tetHoliday": "Tet is the traditional culture of Vietnamese people, an opportunity to bond family relationships, Tet is also an opportunity for businesses to pay attention and express their feelings to their partners and employees with delicious dishes. Tet gifts, Tet gift baskets, meaningful Tet gift boxes. Because partners and employees are invaluable assets of the business that need to be built together.",
+  "send": "Send",
+  "email_address": "Your email address",
+  "tet_gift_basket": "Tet gift basket",
+  "health_gift": "Health gift",
+  "nests": "Nests",
+  "tet_gift_box": "Tet gift box",
+  "cordyceps": "Cordyceps",
+  "all_product": "All product",
+  "tet_gift": "Tet gift",
+  "author": "Author"
+}
